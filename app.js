@@ -31,15 +31,15 @@ function showWeather(position) {
                 class="bg-cover fixed z-10 top-0 w-full p-4 text-center"
                 style="
                 height:100vh;
-                background:url(assets/photo-1447601932606-2b63e2e64331.jpeg);
+                background-image:url(assets/photo-1447601932606-2b63e2e64331.jpeg);
                 ">
-                <div class="rounded-full bg-white p-24 max-w-lg mx-auto">
+                <div class="shadow-lg rounded-full bg-white p-16 max-w-md mx-auto">
                 <img src="assets/no-noun-hoodie-3400189.svg"/>
                 </div>
 
-                        <h1 class="text-3xl py-8">No hoodie needed!</h1>
+                        <h1 class="text-4xl py-8 font-bold">No hoodie needed!</h1>
                         <small>Current Temperature: ${currentTempFahrenheit.toFixed(2)}°F / ${currentTempCelsius.toFixed(2)}°C</small><br/>
-                        <small>Hoodie icon by Hongoram from Noun Project (CC BY 3.0)</small>
+                        <small class="opacity-50">Hoodie icon by Hongoram from Noun Project (CC BY 3.0)</small>
                     </div>`;
             } else {
                 // HTML block for temperature 55°F or less
@@ -50,15 +50,15 @@ function showWeather(position) {
                 class="bg-cover fixed z-10 top-0 w-full p-4 text-center"
                 style="
                 height:100vh;
-                background:url(assets/photo-1519937010618-f8c8b7e135b7.jpeg);
+                background-image:url(assets/photo-1519937010618-f8c8b7e135b7.jpeg);
                 ">
-                <div class="rounded-full bg-white p-24 max-w-lg mx-auto">
+                <div class="shadow-lg rounded-full bg-white p-16 max-w-md mx-auto">
                 <img src="assets/noun-hoodie-3400189.svg"/>
                 </div>
 
-                        <h1 class="text-3xl py-8">Put a hoodie on!</h1>
+                        <h1 class="text-4xl py-8 font-bold">Put a hoodie on!</h1>
                         <small>Current Temperature: ${currentTempFahrenheit.toFixed(2)}°F / ${currentTempCelsius.toFixed(2)}°C</small><br/>
-                        <small>Hoodie icon by Hongoram from Noun Project (CC BY 3.0)</small>
+                        <small class="opacity-50">Hoodie icon by Hongoram from Noun Project (CC BY 3.0)</small>
                     </div>`;
             }
 
