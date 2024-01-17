@@ -23,12 +23,12 @@ function showWeather(position) {
             const currentTempFahrenheit = currentTempCelsius * 9/5 + 32;
 
             let htmlContent;
-            if (currentTempFahrenheit > 55) {
+            if (currentTempFahrenheit > 55  ) {
                 // HTML block for temperature greater than 55°F
                 htmlContent = `
 
                 <div
-                class="bg-cover fixed z-10 top-0 w-full p-4"
+                class="bg-cover fixed z-10 top-0 w-full p-4 text-center"
                 style="
                 height:100vh;
                 background:url(assets/photo-1447601932606-2b63e2e64331.jpeg);
@@ -36,8 +36,9 @@ function showWeather(position) {
                 <div class="rounded-full bg-white p-24 max-w-lg mx-auto">
                 <img src="assets/no-noun-hoodie-3400189.svg"/>
                 </div>
-                        <p>Current Temperature: ${currentTempFahrenheit.toFixed(2)}°F / ${currentTempCelsius.toFixed(2)}°C</p>
-                        <p style="color: green;">It's warm outside, no hoodie needed!</p>
+
+                        <h1 class="text-3xl py-8">No hoodie needed!</h1>
+                        <small>Current Temperature: ${currentTempFahrenheit.toFixed(2)}°F / ${currentTempCelsius.toFixed(2)}°C</small><br/>
                         <small>Hoodie icon by Hongoram from Noun Project (CC BY 3.0)</small>
                     </div>`;
             } else {
@@ -46,7 +47,7 @@ function showWeather(position) {
 
 
                 <div
-                class="bg-cover fixed z-10 top-0 w-full p-4"
+                class="bg-cover fixed z-10 top-0 w-full p-4 text-center"
                 style="
                 height:100vh;
                 background:url(assets/photo-1519937010618-f8c8b7e135b7.jpeg);
@@ -54,8 +55,9 @@ function showWeather(position) {
                 <div class="rounded-full bg-white p-24 max-w-lg mx-auto">
                 <img src="assets/noun-hoodie-3400189.svg"/>
                 </div>
-                        <p>Current Temperature: ${currentTempFahrenheit.toFixed(2)}°F / ${currentTempCelsius.toFixed(2)}°C</p>
-                        <p style="color: blue;">It's cool outside, consider a hoodie.</p>
+
+                        <h1 class="text-3xl py-8">Put a hoodie on!</h1>
+                        <small>Current Temperature: ${currentTempFahrenheit.toFixed(2)}°F / ${currentTempCelsius.toFixed(2)}°C</small><br/>
                         <small>Hoodie icon by Hongoram from Noun Project (CC BY 3.0)</small>
                     </div>`;
             }
