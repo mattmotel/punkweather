@@ -28,7 +28,7 @@ function showWeather(position) {
                 htmlContent = `
 
                 <div
-                class="bg-cover"
+                class="bg-cover fixed z-10 top-0 w-full p-4"
                 style="
                 height:100vh;
                 background:url(assets/photo-1447601932606-2b63e2e64331.jpeg);
@@ -38,6 +38,7 @@ function showWeather(position) {
                 </div>
                         <p>Current Temperature: ${currentTempFahrenheit.toFixed(2)}°F / ${currentTempCelsius.toFixed(2)}°C</p>
                         <p style="color: green;">It's warm outside, no hoodie needed!</p>
+                        <small>Hoodie icon by Hongoram from Noun Project (CC BY 3.0)</small>
                     </div>`;
             } else {
                 // HTML block for temperature 55°F or less
@@ -45,7 +46,7 @@ function showWeather(position) {
 
 
                 <div
-                class="bg-cover"
+                class="bg-cover fixed z-10 top-0 w-full p-4"
                 style="
                 height:100vh;
                 background:url(assets/photo-1519937010618-f8c8b7e135b7.jpeg);
@@ -55,6 +56,7 @@ function showWeather(position) {
                 </div>
                         <p>Current Temperature: ${currentTempFahrenheit.toFixed(2)}°F / ${currentTempCelsius.toFixed(2)}°C</p>
                         <p style="color: blue;">It's cool outside, consider a hoodie.</p>
+                        <small>Hoodie icon by Hongoram from Noun Project (CC BY 3.0)</small>
                     </div>`;
             }
 
