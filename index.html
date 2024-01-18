@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="icon" href="assets/favicon.png" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-200">
+<body class="bg-cover text-white bg-gray-900" style="
+height:100vh;
+background-image:url(assets/philipp-lansing-REOoETloFqE-unsplash.jpeg);
+">
 
     <div class="text-center px-4 py-16">
     <h1 class="text-3xl">Should I wear a hoodie or not?</h1>
-    <button id="getWeather" class="shadow-lg rounded-lg border bg-white p-4 mx-auto my-4">Click here</button>
+
+    <button id="getWeather" type="button" class="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-lg px-5 py-2.5 text-center me-2 my-4">Click here</button>
     <p><small>You do need to <b>allow</b> the app to know your <b>location</b></small></p>
   </div>
     <div id="weather"></div>

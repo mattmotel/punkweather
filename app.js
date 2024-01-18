@@ -28,7 +28,7 @@ function showWeather(position) {
                 htmlContent = `
 
                 <div
-                class="bg-cover fixed z-10 top-0 w-full p-4 text-center"
+                class="bg-cover bg-gray-50 fixed z-10 top-0 w-full p-4 text-center text-black"
                 style="
                 height:100vh;
                 background-image:url(assets/photo-1447601932606-2b63e2e64331.jpeg);
@@ -47,7 +47,7 @@ function showWeather(position) {
 
 
                 <div
-                class="bg-cover fixed z-10 top-0 w-full p-4 text-center"
+                class="bg-cover bg-gray-50 fixed z-10 top-0 w-full p-4 text-center text-black"
                 style="
                 height:100vh;
                 background-image:url(assets/photo-1519937010618-f8c8b7e135b7.jpeg);
