@@ -1,5 +1,3 @@
-
-
 document.getElementById('getWeather').addEventListener('click', () => {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showWeather, showError);
@@ -34,7 +32,7 @@ function showWeather(position) {
             const htmlContent = `
               <div class="bg-cover bg-gray-50 fixed z-10 top-0 w-full p-4 text-center text-black"
                 style="height:100vh; background-image:url(${backgroundImg});">
-                <div class="shadow-lg rounded-full bg-white p-16 max-w-md mx-auto">
+                <div class="button-1 p-16 max-w-md mx-auto">
                   <img src="${hoodieIcon}"/>
                 </div>
                 <h1 class="text-4xl py-8 font-bold">${hoodieText}</h1>
@@ -49,7 +47,6 @@ function showWeather(position) {
             document.getElementById('weather').innerHTML = "Unable to retrieve weather data.";
         });
 }
-
 
 
 function showError(error) {
