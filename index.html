@@ -12,13 +12,20 @@ height:100vh;
 ">
 
     <div class="text-center px-4 py-16">
-    <h1 class="text-5xl">Should I wear a <b>hoodie</b> or not?</h1>
+    <h1 class="text-5xl">Should I wear a <b>hoodie</b>?</h1>
 
     <button id="getWeather" role="button" type="button" class="button-36 rounded-full p-8 max-w-4xl my-24 "><img src="assets/hoodie-q.svg" class="w-32 h-32"/>
       <span class="text hidden">Click me</span></button>
-    <p>Click the minamalist orange buton to find out.</p>
+    <p>Click the minamalist orange buton to find out.<br/>
+    Remember to tap <b>allow</b> location</p>
+    <p class="pt-4 text-sm">&ldquo;Good design is as little design as possible.&rdquo;<br/>
+      Dieter Rams
+    </p>
 
-    <div class="fixed left-0 bottom-16 w-full text-center px-16"><small>This app won't work if you don't <b>allow</b> it to know your <b>location</b></small></div>
+
+    <div class="fixed left-0 bottom-16 z-50 w-full text-center px-16 flex items-center justify-center">Built by
+      <a href="http://township.agency" target="_blank"><img src="assets/ts.svg" class="h-[24px] mx-1"></a> for
+      <a href="http://thehardtimes.net" target="_blank"><img src="assets/ht.png" class="h-6 ml-2"></a></div>
 
   </div>
     <div id="weather"></div>
@@ -45,11 +52,11 @@ height:100vh;
 }
 
 .button-36:hover {
-  filter: brightness(0.98);
+  filter: brightness(0.94);
 }
 
 .button-36:active {
-  filter: brightness(0.97);
+  filter: brightness(0.87);
 
   box-shadow: rgba(99, 99, 99, 0.2) 0 2px 6px 0, inset 0px -1px 0px rgba(0, 0, 0, 0.15);
 }
@@ -67,16 +74,7 @@ height:100vh;
   box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0, inset 0px -6px 0px rgba(0, 0, 0, 0.1), inset 0px -2px 0px rgba(0, 0, 0, 0.15);
 }
 
-.button-1:hover {
-  filter: brightness(0.98);
-}
 
-.button-1:active {
-  filter: brightness(0.97);
-  padding-top: 15px;
-  padding-bottom: 15px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 6px 0, inset 0px -1px 0px rgba(0, 0, 0, 0.15);
-}
 
 
     </style>
