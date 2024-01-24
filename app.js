@@ -25,19 +25,19 @@ function showWeather(position) {
               ? "assets/photo-1447601932606-2b63e2e64331.jpeg" // hot
               : "assets/photo-1519937010618-f8c8b7e135b7.jpeg";
             const hoodieIcon = isTemperatureAbove55
-              ? "assets/no-noun-hoodie-3400189.svg" //hot
-              : "assets/noun-hoodie-3400189.svg";
+              ? "assets/no-hoodie.svg" //hot
+              : "assets/yes-hoodie.svg";
             const hoodieText = isTemperatureAbove55 ? "You don't need a hoodie!" : "Put a hoodie on!";
 
             const htmlContent = `
-              <div class="bg-cover bg-gray-50 fixed z-10 top-0 w-full p-4 text-center text-black"
+              <div class="bg-cover bg-gray-50 fixed z-10 left-0 top-0 w-full p-4 text-center text-black"
                 style="height:100vh; background-image:url(${backgroundImg});">
                 <div class="button-1 p-16 max-w-md mx-auto">
                   <img src="${hoodieIcon}"/>
                 </div>
                 <h1 class="text-4xl py-8 font-bold">${hoodieText}</h1>
                 <p><small>Current Temperature: ${currentTempFahrenheit.toFixed(2)}°F / ${currentTempCelsius.toFixed(2)}°C</small></p>
-                <p><small class="opacity-50">Hoodie icon by Hongoram from Noun Project (CC BY 3.0)</small></p>
+
               </div>
             `;
 
