@@ -28,6 +28,10 @@ function showWeather(position) {
               ? "assets/no-hoodie.svg" //hot
               : "assets/yes-hoodie.svg";
             const hoodieText = isTemperatureAbove55 ? "You don't need a hoodie!" : "Put a hoodie on!";
+            const hoodiePromo = isTemperatureAbove55
+              ? "No, you don’t need a hoodie. But that’s never stopped you from buying <a class='underline' href='https://hardshoppes.com/products/the-hard-times-logo-hoodie'>one</a>." //hot
+              : "Yes, you need a hoodie, preferably a vintage Bane hoodie that someone on eBay tricked you into spending $2,500 on. Or maybe this <a class='underline' href='https://hardshoppes.com/products/the-hard-times-logo-hoodie'>one</a>.";
+
 
             const htmlContent = `
               <div class="bg-cover bg-gray-50 fixed z-10 left-0 top-0 w-full p-4 text-center text-black"
@@ -36,6 +40,9 @@ function showWeather(position) {
                   <img src="${hoodieIcon}"/>
                 </div>
                 <h1 class="text-4xl py-8 font-bold">${hoodieText}</h1>
+                <div class="my-8 px-6 py-4 text-sm bg-white rounded-full max-w-md mx-auto">
+                ${hoodiePromo}
+              </div>
                 <p><small>Current Temperature: ${currentTempFahrenheit.toFixed(2)}°F / ${currentTempCelsius.toFixed(2)}°C</small></p>
 
               </div>
