@@ -1,88 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="icon" href="assets/favicon-hoodie.png" type="image/png">
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="icon" href="assets/favicon-hoodie.png" type="image/png">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class=" bg-gray-50" style="
 height:100vh;
 ">
 
-    <div class="text-center px-4 py-16">
+  <div class="text-center px-4 py-16">
     <h1 class="text-5xl">Should I wear a <b>hoodie</b>?</h1>
 
-    <button id="getWeather" role="button" type="button" class="button-36 rounded-full p-8 max-w-4xl my-20 "><img src="assets/q-hoodie.svg" class="w-32 h-32"/>
-    <span class="text hidden">Click me</span></button>
+    <button id="getWeather" role="button" type="button" class="button-36 rounded-full p-8 max-w-4xl my-16 "><img src="assets/q-hoodie.svg" class="w-32 h-32" />
+      <span class="text hidden">Click me</span></button>
 
     <div id="weather"></div>
+    <div id="weather-message" class="font-bold text-red-500"></div>
 
 
-    <p>Click the minamalist orange buton to find out.<br/>
-    Remember to tap <b>allow</b> location</p>
+    <p>Click the minamalist orange buton to find out.<br />
+      Remember to tap <b>allow</b> location.</p>
     <div class="mt-8 p-4 text-sm bg-gray-200 rounded-full max-w-md mx-auto">
       <p>&ldquo;Good design is as little design as possible.&rdquo;</p>
       <p> Dieter Rams</p>
-  </div>
+    </div>
 
 
-    <div class="fixed left-0 bottom-16 z-50 w-full text-center px-16 flex items-center justify-center">Built by
+    <div class="fixed left-0 bottom-16 z-50 w-full text-center px-4 lg:px-16 flex items-center justify-center">Built by
       <a href="http://township.agency" target="_blank"><img src="assets/ts.svg" class="h-[18px] md:h-[24px] mx-1"></a> for
-      <a href="http://thehardtimes.net" target="_blank"><img src="assets/ht.png" class="h-[20px] md:h-[26px] ml-2"></a></div>
+      <a href="http://thehardtimes.net" target="_blank"><img src="assets/ht.png" class="h-[20px] md:h-[26px] ml-2"></a>
+    </div>
 
   </div>
 
 
 
 
-    <script src="app.js"></script>
+  <script src="app.js"></script>
 
-    <style>
+  <style>
+    .button-36 {
 
+      border: 0;
+      font-size: 16px;
+      transition: all 150ms ease-in-out;
 
-.button-36 {
-
-  border: 0;
-  font-size: 16px;
-  transition: all 150ms ease-in-out;
-
-  border-radius: 999999909px;
+      border-radius: 999999909px;
 
 
-  font-weight: bold;
-  background: #ff9000;
-  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0, inset 0px -6px 0px rgba(0, 0, 0, 0.1), inset 0px -2px 0px rgba(0, 0, 0, 0.15);
-}
+      font-weight: bold;
+      background: #ff9000;
+      box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0, inset 0px -6px 0px rgba(0, 0, 0, 0.1), inset 0px -2px 0px rgba(0, 0, 0, 0.15);
+    }
 
-.button-36:hover {
-  filter: brightness(0.94);
-}
+    .button-36:hover {
+      filter: brightness(0.94);
+    }
 
-.button-36:active {
-  filter: brightness(0.87);
+    .button-36:active {
+      filter: brightness(0.87);
 
-  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 6px 0, inset 0px -1px 0px rgba(0, 0, 0, 0.15);
-}
-
-
-.button-1 {
-  display: inline-block;
-  border: 0;
-  transition: all 150ms ease-in-out;
-  border-radius: 999999999px;
-  font-weight: bold;
-  background: #fff;
-  box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0, inset 0px -6px 0px rgba(0, 0, 0, 0.1), inset 0px -2px 0px rgba(0, 0, 0, 0.15);
-}
+      box-shadow: rgba(99, 99, 99, 0.2) 0 2px 6px 0, inset 0px -1px 0px rgba(0, 0, 0, 0.15);
+    }
 
 
-
-
-    </style>
+    .button-1 {
+      display: inline-block;
+      border: 0;
+      transition: all 150ms ease-in-out;
+      border-radius: 999999999px;
+      font-weight: bold;
+      background: #fff;
+      box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0, inset 0px -6px 0px rgba(0, 0, 0, 0.1), inset 0px -2px 0px rgba(0, 0, 0, 0.15);
+    }
+  </style>
 
 
 
 </body>
+
 </html>
