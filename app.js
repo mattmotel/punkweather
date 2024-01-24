@@ -21,7 +21,7 @@ function showWeather(position) {
       const currentTempCelsius = data.hourly.temperature_2m[0];
       const currentTempFahrenheit = currentTempCelsius * 9 / 5 + 32;
 
-      const isTemperatureAbove55 = currentTempFahrenheit > 1;
+      const isTemperatureAbove55 = currentTempFahrenheit > 55;
       const backgroundImg = isTemperatureAbove55 ?
         "assets/photo-1447601932606-2b63e2e64331.jpeg" // hot
         :
